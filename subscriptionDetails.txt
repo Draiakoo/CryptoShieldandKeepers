@@ -1,0 +1,16 @@
+Network: ethereumSepolia
+Subscription ID: 387
+Owner: 0x854714ffeaa77f87d24627F976578D1BbD2b47EC
+
+Commands:
+    Get subscription info: npx hardhat functions-sub-info --subid 387 --network ethereumSepolia
+    Fund LINK to subscription: npx hardhat functions-sub-fund --subid 387 --amount AMOUNT --network ethereumSepolia
+    Add a consumer contract: npx hardhat functions-sub-add --subid 387 --contract CONSUMER_ADDRESS --network ethereumSepolia
+    Remove consumer contract: npx hardhat functions-sub-remove --subid 387 --contract CONSUMER_ADDRESS --network ethereumSepolia
+    Change owner: npx hardhat functions-sub-transfer --subid 387 --newowner NEW_OWNER_ADDRESS --network ethereumSepolia
+
+    Deploy consumer contract: npx hardhat functions-deploy-client --verify true --network ethereumSepolia
+
+    npx hardhat functions-request --network ethereumSepolia --contract 0xADDD8157Ecda473FDD20b4522424536f3cEbB3b5 --subid 387 --gaslimit 300000
+
+    oracleAddress = 0x649a2C205BE7A3d5e99206CEEFF30c794f0E31EC
